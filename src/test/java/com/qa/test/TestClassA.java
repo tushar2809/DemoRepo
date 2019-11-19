@@ -1,5 +1,6 @@
 package com.qa.test;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -22,16 +23,15 @@ public class TestClassA {
 		
 		
 	}
-//test comment 123456
+
 	@Test
 	public void testMethod()
 	{
 		
 		String actual_title = driver.getTitle();
 		Assert.assertEquals(actual_title, "Google");
-		;
 	}
-@Test
+	@Test
 	public void testMethod2()
 	{
 		driver.findElement(By.linkText("Gmail")).click();
@@ -43,6 +43,7 @@ public class TestClassA {
 	public void tearDown()
 	{
 		driver.quit();
+		System.out.println("closing");
 	}
 	
 }
