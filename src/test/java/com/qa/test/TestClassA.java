@@ -31,6 +31,14 @@ public class TestClassA {
 		Assert.assertEquals(actual_title, "Google");
 		;
 	}
+@Test
+	public void testMethod2()
+	{
+		driver.findElement(By.linkText("Gmail")).click();
+		String current_URL = driver.getCurrentUrl();
+		Assert.assertEquals(current_URL, "https://wwww.google.com/intl/en-GB/gmail/about/#");
+		
+	}
 	@AfterTest
 	public void tearDown()
 	{
