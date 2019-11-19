@@ -22,7 +22,7 @@ public class TestClassA {
 		
 		
 	}
-//test comment 123
+//test comment 1234
 	@Test
 	public void testMethod()
 	{
